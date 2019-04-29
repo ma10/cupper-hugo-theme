@@ -2,7 +2,9 @@
 <html lang="{{ .Site.Language.Lang }}">
   {{ partial "head.html" . }}
   <body>
-    <a href="#main">skip to content</a>
+    {{ if ne $.Site.Params.skipnavLink false }}
+      <a href="#main">skip to content</a>
+    {{ end }}
     {{ partial "svg.html" . }}
     <div class="wrapper">
       {{ partial "header.html" . }}
