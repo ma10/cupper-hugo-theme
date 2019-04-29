@@ -24,6 +24,7 @@ params:
   dateFormat: Jan 2, 2006
   codePenUser: someUser
   katex: true
+  skipnavLink: true
 
 menu:
   nav:
