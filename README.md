@@ -32,7 +32,7 @@ https://cupper-hugo-theme.netlify.com/
 
 ## Minimum Hugo version
 
-Hugo version `0.54.0` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
+Hugo version `0.60.1` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
 
 ## Installation
 
@@ -60,7 +60,7 @@ hugo server --themesDir ../..
 
 ## Configuration
 
-Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/cupper-hugo-theme/tree/master/exampleSite), then edit as desired. 
+Copy `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/cupper-hugo-theme/tree/master/exampleSite), then edit as desired. 
 
 ## Logo
 
