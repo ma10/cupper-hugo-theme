@@ -2,6 +2,7 @@
   <main role="main" id="main">
     <h1>{{ .Title }}</h1>
     <ul class="patterns-list">
+    {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
     {{ range .Pages.ByPublishDate.Reverse }}
       <li>
         <div class="patterns-listitem-wrapper">
@@ -10,7 +11,8 @@
               <use xlink:href="#bookmark"></use>
             </svg>
             {{ .Title }}
-          </a>
+	  </a><br />
+	  ({{ .PublishDate.Format $dateFormat }})
         </div>
       </li>        
     {{ end }}
