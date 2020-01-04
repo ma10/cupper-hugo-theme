@@ -4,14 +4,14 @@
     <ul class="patterns-list">
     {{ range .Pages.ByPublishDate.Reverse }}
       <li>
-        <h2>
+        <div class="patterns-listitem-wrapper">
           <a href="{{ .Permalink }}">
             <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
               <use xlink:href="#bookmark"></use>
             </svg>
             {{ .Title }}
           </a>
-        </h2>
+        </div>
       </li>        
     {{ end }}
     </ul>

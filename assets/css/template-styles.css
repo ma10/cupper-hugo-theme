@@ -453,7 +453,8 @@ caption {
     list-style: none;
     margin-left: 0;
 }
-.patterns-list h2 {
+.patterns-list div.patterns-listitem-wrapper {
+    font-family: Miriam Libre, serif;
     font-size: 1.25rem;
     line-height: 1.6;
 }
