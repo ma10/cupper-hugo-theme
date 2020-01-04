@@ -1,6 +1,6 @@
 {{ define "main" }}
   <main role="main" id="main">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ partial "title.html" . }}</h1>
     <ul class="patterns-list">
       {{ range .Data.Terms.Alphabetical }}
         <li>

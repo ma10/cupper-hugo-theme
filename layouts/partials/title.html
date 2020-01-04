@@ -1,0 +1,14 @@
+{{ $title := .Title }}
+{{ if .IsHome }}
+  {{ $title = "" }}
+{{ else }}
+  {{ if .IsNode }}
+    {{ if eq .Section "tags" }}
+    {{ $title = "タグ一覧" }}
+    {{ end }}
+    {{ if eq .Section "post" }}
+    {{ $title = "記事一覧" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $title }}
